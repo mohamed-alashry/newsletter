@@ -10,6 +10,9 @@ use App\Models\Article;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendNewsletter;
+use App\Models\User;
 
 class ArticleController extends AppBaseController
 {
@@ -153,5 +156,26 @@ class ArticleController extends AppBaseController
         Flash::success('Article deleted successfully.');
 
         return redirect(route('articles.index'));
+    }
+
+    public function preview($id)
+    {
+        $article = Article::with('contents')->find($id);
+
+        return view('articles.preview')
+            ->with('article', $article);
+    }
+
+    public function send($id)
+    {
+        $article = Article::with('contents')->find($id);
+        $users = User::pluck('email')->toArray();
+
+        Mail::to($users)
+        ->send(new SendNewsletter($article));
+
+        return back();
+        // return view('emails.newsletter')
+        //     ->with('article', $article);
     }
 }

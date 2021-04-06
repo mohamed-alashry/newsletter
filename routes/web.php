@@ -37,5 +37,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('articles', App\Http\Controllers\ArticleController::class);
+Route::get('articles/preview/{id}', [App\Http\Controllers\ArticleController::class, 'preview'])->name('articles.preview');
+Route::get('articles/send/{id}', [App\Http\Controllers\ArticleController::class, 'send'])->name('articles.send');
 
 Route::resource('articles.articleContents', App\Http\Controllers\ArticleContentController::class);

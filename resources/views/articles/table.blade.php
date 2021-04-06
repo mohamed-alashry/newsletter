@@ -19,6 +19,8 @@
                     <td>
                         {!! Form::open(['route' => ['articles.destroy', $article->id], 'method' => 'delete']) !!}
                         <div class='btn-group'>
+                            <a href="{{ route('articles.preview', [$article->id]) }}" class='btn btn-info'>preview</a>
+                            <a href="{{ route('articles.send', [$article->id]) }}" class='btn btn-warning'>send</a>
                             <a href="{{ route('articles.show', [$article->id]) }}" class='btn btn-ghost-success'><i
                                     class="fa fa-eye"></i></a>
                             <a href="{{ route('articles.edit', [$article->id]) }}" class='btn btn-ghost-info'><i
