@@ -2,7 +2,6 @@
     <table class="table table-striped" id="articleContents-table">
         <thead>
             <tr>
-                <th>Article</th>
                 <th>Title</th>
                 <th>Sort</th>
                 <th>Link</th>
@@ -12,16 +11,15 @@
         <tbody>
             @foreach ($articleContents as $articleContent)
                 <tr>
-                    <td>{{ $articleContent->article->title }}</td>
                     <td>{{ $articleContent->title }}</td>
                     <td>{{ $articleContent->sort }}</td>
                     <td>{{ $articleContent->link }}</td>
                     <td>
-                        {!! Form::open(['route' => ['articleContents.destroy', $articleContent->id], 'method' => 'delete']) !!}
+                        {!! Form::open(['route' => ['articles.articleContents.destroy', $article, $articleContent->id], 'method' => 'delete']) !!}
                         <div class='btn-group'>
-                            <a href="{{ route('articleContents.show', [$articleContent->id]) }}"
+                            <a href="{{ route('articles.articleContents.show', [$article, $articleContent->id]) }}"
                                 class='btn btn-ghost-success'><i class="fa fa-eye"></i></a>
-                            <a href="{{ route('articleContents.edit', [$articleContent->id]) }}"
+                            <a href="{{ route('articles.articleContents.edit', [$article, $articleContent->id]) }}"
                                 class='btn btn-ghost-info'><i class="fa fa-edit"></i></a>
                             {!! Form::button('<i class="fa fa-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-ghost-danger', 'onclick' => "return confirm('Are you sure?')"]) !!}
                         </div>

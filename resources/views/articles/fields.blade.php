@@ -14,6 +14,9 @@
 <div class="form-group col-sm-6">
     {!! Form::label('image', 'Image:') !!}
     {!! Form::file('image') !!}
+    @if (isset($article))
+        <p><img src="{{ asset($article->image) }}" alt="" width="200"></p>
+    @endif
 </div>
 <div class="clearfix"></div>
 

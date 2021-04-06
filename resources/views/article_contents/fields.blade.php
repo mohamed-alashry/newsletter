@@ -20,13 +20,16 @@
 <div class="form-group col-sm-6">
     {!! Form::label('image', 'Image:') !!}
     {!! Form::file('image') !!}
+    @if (isset($articleContent))
+        <p><img src="{{ asset($articleContent->image) }}" alt="" width="200"></p>
+    @endif
 </div>
 <div class="clearfix"></div>
 
 <!-- Sort Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('sort', 'Sort:') !!}
-    {!! Form::number('sort', null, ['class' => 'form-control']) !!}
+    {!! Form::number('sort', isset($articleContent) ? $articleContent->sort : 1, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Link Field -->
@@ -38,5 +41,5 @@
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{{ route('articleContents.index') }}" class="btn btn-secondary">Cancel</a>
+    <a href="{{ route('articles.articleContents.index', $article) }}" class="btn btn-secondary">Cancel</a>
 </div>

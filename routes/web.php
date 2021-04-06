@@ -38,4 +38,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('articles', App\Http\Controllers\ArticleController::class);
 
-Route::resource('articleContents', App\Http\Controllers\ArticleContentController::class);
+Route::resource('articles.articleContents', App\Http\Controllers\ArticleContentController::class);

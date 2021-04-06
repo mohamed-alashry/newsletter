@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Eloquent as Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * Class Article
@@ -63,5 +64,15 @@ class Article extends Model
     public function getImageAttribute($fileName)
     {
         return $fileName ? asset('uploads/'.  $fileName) : null;
+    }
+
+    /**
+     * Get all of the contents for the Article
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function contents(): HasMany
+    {
+        return $this->hasMany(ArticleContent::class);
     }
 }

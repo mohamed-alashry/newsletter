@@ -3,7 +3,7 @@
 @section('content')
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-         <a href="{!! route('articleContents.index') !!}">Article Content</a>
+         <a href="{!! route('articles.articleContents.index', $article) !!}">Article Content</a>
       </li>
       <li class="breadcrumb-item active">Create</li>
     </ol>
@@ -18,7 +18,7 @@
                                 <strong>Create Article Content</strong>
                             </div>
                             <div class="card-body">
-                                {!! Form::open(['route' => 'articleContents.store', 'files' => true]) !!}
+                                {!! Form::open(['route' => ['articles.articleContents.store', $article], 'files' => true]) !!}
 
                                    @include('article_contents.fields')
 

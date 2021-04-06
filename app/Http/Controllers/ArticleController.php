@@ -6,6 +6,7 @@ use App\Http\Requests\CreateArticleRequest;
 use App\Http\Requests\UpdateArticleRequest;
 use App\Repositories\ArticleRepository;
 use App\Http\Controllers\AppBaseController;
+use App\Models\Article;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
@@ -29,7 +30,7 @@ class ArticleController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $articles = $this->articleRepository->paginate(10);
+        $articles = Article::withCount('contents')->paginate(10);
 
         return view('articles.index')
             ->with('articles', $articles);

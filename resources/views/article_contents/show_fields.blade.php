@@ -19,13 +19,13 @@
 <!-- Body Field -->
 <div class="form-group">
     {!! Form::label('body', 'Body:') !!}
-    <p>{{ $articleContent->body }}</p>
+    <p>{!! $articleContent->body !!}</p>
 </div>
 
 <!-- Image Field -->
 <div class="form-group">
     {!! Form::label('image', 'Image:') !!}
-    <p>{{ $articleContent->image }}</p>
+    <p><img src="{{ asset($articleContent->image) }}" alt=""></p>
 </div>
 
 <!-- Sort Field -->

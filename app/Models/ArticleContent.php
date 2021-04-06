@@ -57,7 +57,7 @@ class ArticleContent extends Model
         'article_id' => 'required',
         'title' => 'required',
         'body' => 'required',
-        'image' => 'required|image'
+        'image' => 'image'
     ];
 
     public function setImageAttribute($file)

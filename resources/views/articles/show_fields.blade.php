@@ -13,13 +13,13 @@
 <!-- Body Field -->
 <div class="form-group">
     {!! Form::label('body', 'Body:') !!}
-    <p>{{ $article->body }}</p>
+    <p>{!! $article->body !!}</p>
 </div>
 
 <!-- Image Field -->
 <div class="form-group">
     {!! Form::label('image', 'Image:') !!}
-    <p>{{ $article->image }}</p>
+    <p><img src="{{ asset($article->image) }}" alt=""></p>
 </div>
 
 <!-- Created At Field -->

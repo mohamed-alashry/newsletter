@@ -3,7 +3,7 @@
 @section('content')
     <ol class="breadcrumb">
           <li class="breadcrumb-item">
-             <a href="{!! route('articleContents.index') !!}">Article Content</a>
+             <a href="{!! route('articles.articleContents.index', $article) !!}">Article Content</a>
           </li>
           <li class="breadcrumb-item active">Edit</li>
         </ol>
@@ -18,7 +18,7 @@
                               <strong>Edit Article Content</strong>
                           </div>
                           <div class="card-body">
-                              {!! Form::model($articleContent, ['route' => ['articleContents.update', $articleContent->id], 'method' => 'patch', 'files' => true]) !!}
+                              {!! Form::model($articleContent, ['route' => ['articles.articleContents.update', $article, $articleContent->id], 'method' => 'patch', 'files' => true]) !!}
 
                               @include('article_contents.fields')
 

@@ -29,18 +29,11 @@ class ArticleContentController extends AppBaseController
      *
      * @return Response
      */
-    public function index(Request $request)
+    public function index(Request $request, $article)
     {
-        $articleContentsQuery = ArticleContent::query();
+        $articleContents = ArticleContent::where('article_id', $article)->orderBy('sort')->paginate(10);
 
-        if (request()->filled('article')) {
-            $articleContentsQuery->where('article_id', request('article'));
-        }
-
-        $articleContents = $articleContentsQuery->paginate(10);
-
-        return view('article_contents.index')
-            ->with('articleContents', $articleContents);
+        return view('article_contents.index', compact('articleContents', 'article'));
     }
 
     /**
@@ -48,11 +41,11 @@ class ArticleContentController extends AppBaseController
      *
      * @return Response
      */
-    public function create()
+    public function create($article)
     {
         $articles = Article::pluck('title', 'id');
 
-        return view('article_contents.create', compact('articles'));
+        return view('article_contents.create', compact('articles', 'article'));
     }
 
     /**
@@ -62,15 +55,16 @@ class ArticleContentController extends AppBaseController
      *
      * @return Response
      */
-    public function store(CreateArticleContentRequest $request)
+    public function store(CreateArticleContentRequest $request, $article)
     {
         $input = $request->all();
 
+        $input['article_id'] = $article;
         $articleContent = $this->articleContentRepository->create($input);
 
         Flash::success('Article Content saved successfully.');
 
-        return redirect(route('articleContents.index'));
+        return redirect(route('articles.articleContents.index', $article));
     }
 
     /**
@@ -80,17 +74,17 @@ class ArticleContentController extends AppBaseController
      *
      * @return Response
      */
-    public function show($id)
+    public function show($article, $id)
     {
         $articleContent = $this->articleContentRepository->find($id);
 
         if (empty($articleContent)) {
             Flash::error('Article Content not found');
 
-            return redirect(route('articleContents.index'));
+            return redirect(route('articles.articleContents.index'));
         }
 
-        return view('article_contents.show')->with('articleContent', $articleContent);
+        return view('article_contents.show', compact('articleContent', 'article'));
     }
 
     /**
@@ -100,18 +94,18 @@ class ArticleContentController extends AppBaseController
      *
      * @return Response
      */
-    public function edit($id)
+    public function edit($article, $id)
     {
         $articleContent = $this->articleContentRepository->find($id);
 
         if (empty($articleContent)) {
             Flash::error('Article Content not found');
 
-            return redirect(route('articleContents.index'));
+            return redirect(route('articles.articleContents.index'));
         }
         $articles = Article::pluck('title', 'id');
 
-        return view('article_contents.edit', compact('articleContent', 'articles'));
+        return view('article_contents.edit', compact('articleContent', 'articles', 'article'));
     }
 
     /**
@@ -122,21 +116,21 @@ class ArticleContentController extends AppBaseController
      *
      * @return Response
      */
-    public function update($id, UpdateArticleContentRequest $request)
+    public function update($article, $id, UpdateArticleContentRequest $request)
     {
         $articleContent = $this->articleContentRepository->find($id);
 
         if (empty($articleContent)) {
             Flash::error('Article Content not found');
 
-            return redirect(route('articleContents.index'));
+            return redirect(route('articles.articleContents.index'));
         }
 
         $articleContent = $this->articleContentRepository->update($request->all(), $id);
 
         Flash::success('Article Content updated successfully.');
 
-        return redirect(route('articleContents.index'));
+        return redirect(route('articles.articleContents.index', $article));
     }
 
     /**
@@ -148,20 +142,20 @@ class ArticleContentController extends AppBaseController
      *
      * @return Response
      */
-    public function destroy($id)
+    public function destroy($article, $id)
     {
         $articleContent = $this->articleContentRepository->find($id);
 
         if (empty($articleContent)) {
             Flash::error('Article Content not found');
 
-            return redirect(route('articleContents.index'));
+            return redirect(route('articles.articleContents.index', $article));
         }
 
         $this->articleContentRepository->delete($id);
 
         Flash::success('Article Content deleted successfully.');
 
-        return redirect(route('articleContents.index'));
+        return redirect(route('articles.articleContents.index', $article));
     }
 }

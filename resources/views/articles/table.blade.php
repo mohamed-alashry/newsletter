@@ -3,6 +3,7 @@
         <thead>
             <tr>
                 <th>Title</th>
+                <th>Contents</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
@@ -10,6 +11,11 @@
             @foreach ($articles as $article)
                 <tr>
                     <td>{{ $article->title }}</td>
+                    <td>
+                        <a href="{{ route('articles.articleContents.index', $article->id) }}" class="btn btn-primary">
+                            <span class="badge badge-warning">{{ $article->contents_count }}</span> Contents
+                        </a>
+                    </td>
                     <td>
                         {!! Form::open(['route' => ['articles.destroy', $article->id], 'method' => 'delete']) !!}
                         <div class='btn-group'>
