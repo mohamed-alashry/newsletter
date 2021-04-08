@@ -19,6 +19,7 @@ class CreateArticlesTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->string('image');
+            $table->tinyInteger('shape')->default('1')->comment('1 => full, 2 => half');
             $table->timestamps();
         });
     }

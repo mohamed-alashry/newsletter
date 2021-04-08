@@ -22,6 +22,7 @@ class CreateArticleContentsTable extends Migration
             $table->string('image')->nullable();
             $table->tinyInteger('sort')->default(1);
             $table->string('link')->nullable();
+            $table->tinyInteger('shape')->default('1')->comment('1 => full, 2 => half');
             $table->timestamps();
 
             $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');

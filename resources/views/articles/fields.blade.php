@@ -20,6 +20,18 @@
 </div>
 <div class="clearfix"></div>
 
+<!-- Shape Field -->
+<div class="form-group col-sm-12">
+    {!! Form::label('shape', 'Shape:') !!}
+    <label class="radio-inline">
+        {!! Form::radio('shape', 1, true) !!} Full
+    </label>
+
+    <label class="radio-inline">
+        {!! Form::radio('shape', 2, null) !!} Half
+    </label>
+</div>
+
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}

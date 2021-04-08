@@ -1,9 +1,3 @@
-<!-- Article Id Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('article_id', 'Article Id:') !!}
-    {!! Form::select('article_id', $articles, null, ['class' => 'form-control']) !!}
-</div>
-
 <!-- Title Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('title', 'Title:') !!}
@@ -36,6 +30,18 @@
 <div class="form-group col-sm-6">
     {!! Form::label('link', 'Link:') !!}
     {!! Form::text('link', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Shape Field -->
+<div class="form-group col-sm-12">
+    {!! Form::label('shape', 'Shape:') !!}
+    <label class="radio-inline">
+        {!! Form::radio('shape', 1, true) !!} Full
+    </label>
+
+    <label class="radio-inline">
+        {!! Form::radio('shape', 2, null) !!} Half
+    </label>
 </div>
 
 <!-- Submit Field -->

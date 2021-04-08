@@ -43,9 +43,7 @@ class ArticleContentController extends AppBaseController
      */
     public function create($article)
     {
-        $articles = Article::pluck('title', 'id');
-
-        return view('article_contents.create', compact('articles', 'article'));
+        return view('article_contents.create', compact('article'));
     }
 
     /**
@@ -103,9 +101,8 @@ class ArticleContentController extends AppBaseController
 
             return redirect(route('articles.articleContents.index'));
         }
-        $articles = Article::pluck('title', 'id');
 
-        return view('article_contents.edit', compact('articleContent', 'articles', 'article'));
+        return view('article_contents.edit', compact('articleContent', 'article'));
     }
 
     /**

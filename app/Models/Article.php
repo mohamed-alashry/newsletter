@@ -22,7 +22,8 @@ class Article extends Model
     public $fillable = [
         'title',
         'body',
-        'image'
+        'image',
+        'shape',
     ];
 
     /**

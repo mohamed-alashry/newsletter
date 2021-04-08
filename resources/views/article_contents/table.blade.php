@@ -5,6 +5,7 @@
                 <th>Title</th>
                 <th>Sort</th>
                 <th>Link</th>
+                <th>Shape</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
@@ -14,6 +15,7 @@
                     <td>{{ $articleContent->title }}</td>
                     <td>{{ $articleContent->sort }}</td>
                     <td>{{ $articleContent->link }}</td>
+                    <td>{{ $articleContent->shape == 2 ? 'Half' : 'Full' }}</td>
                     <td>
                         {!! Form::open(['route' => ['articles.articleContents.destroy', $article, $articleContent->id], 'method' => 'delete']) !!}
                         <div class='btn-group'>

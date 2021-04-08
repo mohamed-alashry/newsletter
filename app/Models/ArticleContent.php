@@ -30,7 +30,8 @@ class ArticleContent extends Model
         'body',
         'image',
         'sort',
-        'link'
+        'link',
+        'shape',
     ];
 
     /**
@@ -54,7 +55,6 @@ class ArticleContent extends Model
      * @var array
      */
     public static $rules = [
-        'article_id' => 'required',
         'title' => 'required',
         'body' => 'required',
         'image' => 'image'

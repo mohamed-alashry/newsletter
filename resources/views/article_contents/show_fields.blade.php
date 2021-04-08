@@ -40,6 +40,12 @@
     <p>{{ $articleContent->link }}</p>
 </div>
 
+<!-- Shape Field -->
+<div class="form-group">
+    {!! Form::label('shape', 'Shape:') !!}
+    <p>{!! $articleContent->shape == 2 ? 'Half' : 'Full' !!}</p>
+</div>
+
 <!-- Created At Field -->
 <div class="form-group">
     {!! Form::label('created_at', 'Created At:') !!}
@@ -51,4 +57,3 @@
     {!! Form::label('updated_at', 'Updated At:') !!}
     <p>{{ $articleContent->updated_at }}</p>
 </div>
-

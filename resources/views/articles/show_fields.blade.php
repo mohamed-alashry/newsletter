@@ -22,6 +22,12 @@
     <p><img src="{{ asset($article->image) }}" alt=""></p>
 </div>
 
+<!-- Shape Field -->
+<div class="form-group">
+    {!! Form::label('shape', 'Shape:') !!}
+    <p>{!! $article->shape == 2 ? 'Half' : 'Full' !!}</p>
+</div>
+
 <!-- Created At Field -->
 <div class="form-group">
     {!! Form::label('created_at', 'Created At:') !!}
@@ -33,4 +39,3 @@
     {!! Form::label('updated_at', 'Updated At:') !!}
     <p>{{ $article->updated_at }}</p>
 </div>
-
