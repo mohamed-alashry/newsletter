@@ -1,83 +1,69 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-            <a href="{{ route('articles.index') }}">Article</a>
-        </li>
-        <li class="breadcrumb-item active">Detail</li>
-    </ol>
-    <div class="container-fluid">
-        <div class="animated fadeIn">
-            @include('coreui-templates::common.errors')
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <strong>Details</strong>
-                            <a href="{{ route('articles.index') }}" class="btn btn-light">Back</a>
-                        </div>
-                        <style>
-                            .w-1 {
-                                width: 100%
-                            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('/css/preview.css') }}">
+    <title>Article Preview</title>
+</head>
 
-                            .preview-container {
-                                width: 50%;
-                                background-color: #E5E5E5;
-                                padding: 20px;
-                                position: relative;
-                            }
-
-                            .top-right-corner {
-                                position: absolute;
-                                top: 0;
-                                right: 0;
-                            }
-                        </style>
-                        <div class="card-body">
-                            <div class="d-flex flex-row justify-content-center ">
-                                <div class="preview-container rounded">
-                                    <img src="{{ asset('images/top-right.svg') }}" class="top-right-corner">
-                                    <div class="d-flex flex-row justify-content-between my-5 px-3">
-                                        <img src="{{ asset('images/artpower-logo.svg') }}">
-
-                                        <div style="color: #fff; z-index: 1">
-                                            <img src="{{ asset('images/globe.svg') }}"> Visit website
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 mb-5">
-                                            <div class="text-center">
-                                                <h3>POWERFUL AND SAFE</h3>
-                                                <h1 style="color: #BD3D31">SERVER HOSTING</h1>
-                                            </div>
-                                            <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime deleniti nam consequuntur incidunt nobis aut enim soluta. Et magnam quidem inventore deserunt delectus magni voluptatibus numquam, architecto saepe! Temporibus.</p>
-                                            <button class="btn btn-danger float-right mr-5">CHECK IT NOW</button>
-                                        </div>
-                                        <div class="col-12 shadow p-3 mb-5 bg-white rounded">
-                                            <img src="{{ asset($article->image) }}" class="w-1">
-                                            <h3>{{ $article->title }}</h3>
-                                            {!! $article->body !!}
-                                        </div>
-                                        @foreach ($article->contents as $content)
-                                            <div class="col-6">
-                                                <div class="shadow p-3 mb-5 bg-white rounded">
-                                                    @if ($content->image)
-                                                        <img src="{{ asset($content->image) }}" class="w-1">
-                                                    @endif
-                                                    <h3>{{ $content->title }}</h3>
-                                                    {!! $content->body !!}
-                                                </div>
-                                            </div>
-                                        @endforeach
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<body>
+    <div class="container">
+        <div class="preview-container">
+            <img src="{{ asset('images/top-right.png') }}" class="top-right-corner">
+            <div class="header">
+                <img src="{{ asset('images/artpower-logo.png') }}">
+                <div class="header-right">
+                    <img src="{{ asset('images/globe.png') }}" class="globe"><span> Visit website</span>
+                </div>
+            </div>
+            <div class="intro">
+                <div class="intro-title">
+                    <div class="subtitle">Powerful and safe</div>
+                    <div class="head-title">server hosting</div>
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution.</p>
+                <button class="btn">Check it now</button>
+            </div>
+            <div class="news-section">
+                <div class="top-divider">
+                    <div class="divider-title subtitle">art power updates</div>
+                    <div class="divider"></div>
+                </div>
+                <div class="head-title">Latest News</div>
+            </div>
+            <div class="news">
+                <div class="card shape-{{ $article->shape == 2 ? 'half' : 'full' }}">
+                    <img src="{{ asset($article->image) }}" class="news-image">
+                    <div class="news-text">
+                        <p class="news-title">{{ $article->title }}</p>
+                        <div class="news-desc">{!! $article->body !!}</div>
                     </div>
                 </div>
+                @foreach ($contentFull as $full)
+                    <div class="card shape-full">
+                        <img src="{{ asset($full->image) }}" class="news-image">
+                        <div class="news-text">
+                            <p class="news-title">{{ $full->title }}</p>
+                            <div class="news-desc">{!! $full->body !!}</div>
+                        </div>
+                    </div>
+                @endforeach
+                @foreach ($contentHalf as $half)
+                    <div class="card shape-half">
+                        <img src="{{ asset($half->image) }}" class="news-image">
+                        <div class="news-text">
+                            <p class="news-title">{{ $half->title }}</p>
+                            <div class="news-desc">{!! $half->body !!}</div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
-@endsection
+</body>
+
+</html>

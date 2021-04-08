@@ -13,6 +13,7 @@ use Response;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendNewsletter;
 use App\Models\User;
+use PhpParser\Node\Name\FullyQualified;
 
 class ArticleController extends AppBaseController
 {
@@ -160,19 +161,25 @@ class ArticleController extends AppBaseController
 
     public function preview($id)
     {
-        $article = Article::with('contents')->find($id);
+        $article = Article::find($id);
 
-        return view('articles.preview')
-            ->with('article', $article);
+        $contentFull = $article->contents()->where('shape', 1)->orderBy('sort')->get();
+        $contentHalf = $article->contents()->where('shape', 2)->orderBy('sort')->get();
+
+        return view('articles.preview', compact('article', 'contentFull', 'contentHalf'));
     }
 
     public function send($id)
     {
-        $article = Article::with('contents')->find($id);
+        $article = Article::find($id);
+
+        $contentFull = $article->contents()->where('shape', 1)->orderBy('sort')->get();
+        $contentHalf = $article->contents()->where('shape', 2)->orderBy('sort')->get();
+
         $users = User::pluck('email')->toArray();
 
         Mail::to($users)
-        ->send(new SendNewsletter($article));
+        ->send(new SendNewsletter($article, $contentFull, $contentHalf));
 
         return back();
         // return view('emails.newsletter')

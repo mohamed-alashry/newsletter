@@ -13,15 +13,19 @@ class SendNewsletter extends Mailable
     use Queueable, SerializesModels;
 
     public $article;
+    public $contentFull;
+    public $contentHalf;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(Article $article)
+    public function __construct($article, $contentFull, $contentHalf)
     {
         $this->article = $article;
+        $this->contentFull = $contentFull;
+        $this->contentHalf = $contentHalf;
     }
 
     /**

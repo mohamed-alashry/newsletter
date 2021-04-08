@@ -4,169 +4,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <style>
-        img {
-            vertical-align: middle;
-            border-style: none;
-        }
-
-        .w-1 {
-            width: 100%
+        body {
+            font-family: sans-serif;
         }
 
         .container {
             display: flex;
             justify-content: center;
-            max-width: 1140px;
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
+            background-color: #e5e5e5;
+            padding: 20px;
         }
 
         .preview-container {
-            width: 100%;
-            background-color: #E5E5E5;
-            padding: 20px;
+            width: 70%;
             position: relative;
+            border-radius: 40px;
+            padding: 15px;
+            background-color: #fff;
         }
 
         .top-right-corner {
             position: absolute;
             top: 0;
             right: 0;
-        }
-
-        .rounded {
-            border-radius: .25rem;
+            z-index: 0;
         }
 
         .header {
             display: flex;
             justify-content: space-between;
-            margin: 3rem 0;
-            padding: 0 1rem;
+            margin-top: 20px;
+            padding: 35px;
         }
 
-        .row {
+        .header-right {
+            color: #fff;
+            z-index: 1;
+            width: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .globe {
+            width: 28px;
+            height: 28px;
+        }
+
+        .intro {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .intro-title {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 30px;
+            font-weight: 600;
+            color: #231f20;
+        }
+
+        .head-title {
+            font-size: 55px;
+            font-weight: 900;
+            color: #bd3d31;
+        }
+
+        .btn {
+            width: 260px;
+            height: 53px;
+            align-self: flex-end;
+            border: 0;
+            border-radius: 137px;
+            background-color: #bd3d31;
+            color: #fff;
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12),
+                0px 2px 5px rgba(0, 0, 0, 0.16);
+        }
+
+        .news-section {
+            margin: 20px;
+        }
+
+        .top-divider {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .divider-title {
+            flex-grow: 0;
+            margin-right: 20px;
+        }
+
+        .divider {
+            flex-grow: 1;
+            height: 1px;
+            background-color: rgba(35, 31, 32, 0.12);
+        }
+
+        .news {
             display: flex;
             flex-wrap: wrap;
-            margin-right: 15px;
-            margin-left: -15px;
+            justify-content: space-between;
         }
 
-        .col-12, .col-6 {
-            position: relative;
-            width: 100%;
-            min-height: 1px;
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-
-        .col-12 {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-
-        .col-6 {
-            flex: 0 0 47%;
-            max-width: 47%;
-        }
-
-        .mb-5 {
-            margin-bottom: 3rem;
-        }
-
-        .p-3 {
-            padding: 1rem;
-        }
-
-        .px-5 {
-            padding: 0 3rem;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .check-btn {
-            color: #fff;
-            background-color: #BD3D31;
-            border-color: #b21f2d;
-            float: right;
-            display: inline-block;
-            font-weight: 400;
-            text-align: center;
-            white-space: nowrap;
-            vertical-align: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            border: 1px solid transparent;
-            padding: .375rem .75rem;
-            font-size: 1rem;
-            line-height: 1.5;
-            border-radius: .25rem;
-            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-            cursor: pointer;
-            text-transform: none;
-            margin-right: 3rem;
-        }
-
-        .card-shadow {
-            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+        .card {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
             background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .shape-full {
+            width: 100%;
+        }
+
+        .shape-half {
+            width: 49%;
+        }
+
+        .news-image {
+            width: 100%;
+            max-height: 244px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .news-text {
+            padding: 0 20px;
+        }
+
+        .news-title {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 22px;
+            color: #0c1014;
+        }
+
+        .news-desc {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: rgba(35, 31, 32, 0.54);
         }
 
     </style>
+    <title>Article Preview</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="preview-container rounded">
-            <img src="{{ asset('images/top-right.svg') }}" class="top-right-corner">
+        <div class="preview-container">
+            <img src="{{ asset('images/top-right.png') }}" class="top-right-corner">
             <div class="header">
-                <img src="{{ asset('images/artpower-logo.svg') }}">
-
-                <div style="color: #fff; z-index: 1">
-                    <img src="{{ asset('images/globe.svg') }}"> Visit website
+                <img src="{{ asset('images/artpower-logo.png') }}">
+                <div class="header-right">
+                    <img src="{{ asset('images/globe.png') }}" class="globe"><span> Visit website</span>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 mb-5">
-                    <div class="text-center">
-                        <h3>POWERFUL AND SAFE</h3>
-                        <h1 style="color: #BD3D31">SERVER HOSTING</h1>
-                    </div>
-                    <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime deleniti nam consequuntur incidunt nobis aut enim soluta. Et magnam quidem inventore deserunt delectus magni voluptatibus numquam, architecto saepe! Temporibus.</p>
-                    <button class="check-btn">CHECK IT NOW</button>
+            <div class="intro">
+                <div class="intro-title">
+                    <div class="subtitle">Powerful and safe</div>
+                    <div class="head-title">server hosting</div>
                 </div>
-                <div class="col-12 ">
-                    <div class="card-shadow p-3 mb-5 rounded">
-                        <img src="{{ asset($article->image) }}" class="w-1">
-                        <h3>{{ $article->title }}</h3>
-                        {!! $article->body !!}
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution.</p>
+                <button class="btn">Check it now</button>
+            </div>
+            <div class="news-section">
+                <div class="top-divider">
+                    <div class="divider-title subtitle">art power updates</div>
+                    <div class="divider"></div>
+                </div>
+                <div class="head-title">Latest News</div>
+            </div>
+            <div class="news">
+                <div class="card shape-{{ $article->shape == 2 ? 'half' : 'full' }}">
+                    <img src="{{ asset($article->image) }}" class="news-image">
+                    <div class="news-text">
+                        <p class="news-title">{{ $article->title }}</p>
+                        <div class="news-desc">{!! $article->body !!}</div>
                     </div>
                 </div>
-                @foreach ($article->contents as $content)
-                    <div class="col-6">
-                        <div class="card-shadow p-3 mb-5 rounded">
-                            @if ($content->image)
-                                <img src="{{ asset($content->image) }}" class="w-1">
-                            @endif
-                            <h3>{{ $content->title }}</h3>
-                            {!! $content->body !!}
+                @foreach ($contentFull as $full)
+                    <div class="card shape-full">
+                        <img src="{{ asset($full->image) }}" class="news-image">
+                        <div class="news-text">
+                            <p class="news-title">{{ $full->title }}</p>
+                            <div class="news-desc">{!! $full->body !!}</div>
+                        </div>
+                    </div>
+                @endforeach
+                @foreach ($contentHalf as $half)
+                    <div class="card shape-half">
+                        <img src="{{ asset($half->image) }}" class="news-image">
+                        <div class="news-text">
+                            <p class="news-title">{{ $half->title }}</p>
+                            <div class="news-desc">{!! $half->body !!}</div>
                         </div>
                     </div>
                 @endforeach
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
