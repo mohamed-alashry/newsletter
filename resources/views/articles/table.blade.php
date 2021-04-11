@@ -3,7 +3,6 @@
         <thead>
             <tr>
                 <th>Title</th>
-                <th>Shape</th>
                 <th>Contents</th>
                 <th colspan="3">Action</th>
             </tr>
@@ -12,7 +11,6 @@
             @foreach ($articles as $article)
                 <tr>
                     <td>{{ $article->title }}</td>
-                    <td>{{ $article->shape == 2 ? 'Half' : 'Full' }}</td>
                     <td>
                         <a href="{{ route('articles.articleContents.index', $article->id) }}" class="btn btn-primary">
                             <span class="badge badge-warning">{{ $article->contents_count }}</span> Contents
@@ -21,7 +19,8 @@
                     <td>
                         {!! Form::open(['route' => ['articles.destroy', $article->id], 'method' => 'delete']) !!}
                         <div class='btn-group'>
-                            <a href="{{ route('articles.preview', [$article->id]) }}" class='btn btn-info'>preview</a>
+                            <a href="{{ route('articles.preview', [$article->id]) }}" class='btn btn-info'
+                                target="_blank">preview</a>
                             <a href="{{ route('articles.send', [$article->id]) }}" class='btn btn-warning'>send</a>
                             <a href="{{ route('articles.show', [$article->id]) }}" class='btn btn-ghost-success'><i
                                     class="fa fa-eye"></i></a>

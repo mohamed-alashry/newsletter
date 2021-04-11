@@ -21,21 +21,14 @@ class Article extends Model
 
     public $fillable = [
         'title',
+        'subtitle',
         'body',
         'image',
-        'shape',
-    ];
-
-    /**
-     * The attributes that should be casted to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'id' => 'integer',
-        'title' => 'string',
-        'body' => 'string',
-        'image' => 'string'
+        'link_text',
+        'link',
+        'content_title',
+        'content_subtitle',
+        // 'shape',
     ];
 
     /**
@@ -45,8 +38,13 @@ class Article extends Model
      */
     public static $rules = [
         'title' => 'required',
+        'subtitle' => 'required',
         'body' => 'required',
-        'image' => 'required|image'
+        'image' => 'image',
+        'link_text' => 'required',
+        'link' => 'required',
+        'content_title' => 'required',
+        'content_subtitle' => 'required',
     ];
 
     public function setImageAttribute($file)

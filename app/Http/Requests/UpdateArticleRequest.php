@@ -26,7 +26,6 @@ class UpdateArticleRequest extends FormRequest
     public function rules()
     {
         $rules = Article::$rules;
-        $rules['image'] = 'image';
 
         return $rules;
     }

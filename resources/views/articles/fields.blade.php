@@ -4,6 +4,12 @@
     {!! Form::text('title', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Subtitle Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('subtitle', 'Subtitle:') !!}
+    {!! Form::text('subtitle', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Body Field -->
 <div class="form-group col-sm-12 col-lg-12">
     {!! Form::label('body', 'Body:') !!}
@@ -20,7 +26,31 @@
 </div>
 <div class="clearfix"></div>
 
-<!-- Shape Field -->
+<!-- Link Text Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('link_text', 'Link Text:') !!}
+    {!! Form::text('link_text', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Link Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('link', 'Link:') !!}
+    {!! Form::text('link', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Content Title Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('content_title', 'Content Title:') !!}
+    {!! Form::text('content_title', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Content Subtitle Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('content_subtitle', 'Content Subtitle:') !!}
+    {!! Form::text('content_subtitle', null, ['class' => 'form-control']) !!}
+</div>
+
+{{-- <!-- Shape Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('shape', 'Shape:') !!}
     <label class="radio-inline">
@@ -30,7 +60,7 @@
     <label class="radio-inline">
         {!! Form::radio('shape', 2, null) !!} Half
     </label>
-</div>
+</div> --}}
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">

@@ -17,9 +17,14 @@ class CreateArticlesTable extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
+            $table->string('subtitle');
             $table->text('body');
-            $table->string('image');
-            $table->tinyInteger('shape')->default('1')->comment('1 => full, 2 => half');
+            $table->string('image')->nullable();
+            $table->string('link_text');
+            $table->string('link');
+            $table->string('content_title');
+            $table->string('content_subtitle');
+            // $table->tinyInteger('shape')->default('1')->comment('1 => full, 2 => half');
             $table->timestamps();
         });
     }
