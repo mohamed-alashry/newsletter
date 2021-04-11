@@ -66,6 +66,27 @@
                     </div>
                 @endforeach
             </div>
+            <div class="footer">
+                If you prefer not to receive emails like this, you may <a href="#" class="unsubscribe">unsubscribe</a>
+                (c) 2021 ArtPower. All rights reserved.
+                <div class="social">
+                    <a href="#">
+                        <img src="{{ asset('images/twitter.png') }}" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="{{ asset('images/facebook.png') }}" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="{{ asset('images/instagram.png') }}" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="{{ asset('images/youtube.png') }}" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="{{ asset('images/linkedin.png') }}" class="social-icon">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </body>

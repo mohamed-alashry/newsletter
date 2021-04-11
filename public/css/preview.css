@@ -189,6 +189,29 @@ body {
     color: rgba(35, 31, 32, 0.54);
 }
 
+.footer {
+    margin-top: 70px;
+    border-top: 1px #dfe1e4 solid;
+    padding: 20px;
+    font-size: 14px;
+    color: #b1bcc0;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.unsubscribe {
+    color: #c5554b;
+}
+
+.social-icon {
+    margin: 0 15px;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 }

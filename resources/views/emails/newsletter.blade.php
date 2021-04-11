@@ -198,6 +198,29 @@
             color: rgba(35, 31, 32, 0.54);
         }
 
+        .footer {
+            margin-top: 70px;
+            border-top: 1px #dfe1e4 solid;
+            padding: 20px;
+            font-size: 14px;
+            color: #b1bcc0;
+            text-align: center;
+        }
+
+        .social {
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .unsubscribe {
+            color: #c5554b;
+        }
+
+        .social-icon {
+            margin: 0 15px;
+        }
+
         /* Small devices (portrait tablets and large phones, 600px and up) */
         @media only screen and (min-width: 600px) {}
 
@@ -274,6 +297,27 @@
                         </div>
                     </div>
                 @endforeach
+            </div>
+            <div class="footer">
+                If you prefer not to receive emails like this, you may <a href="#" class="unsubscribe">unsubscribe</a>
+                (c) 2021 ArtPower. All rights reserved.
+                <div class="social">
+                    <a href="#">
+                        <img src="{{ asset('images/twitter.png') }}" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="{{ asset('images/facebook.png') }}" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="{{ asset('images/instagram.png') }}" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="{{ asset('images/youtube.png') }}" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="{{ asset('images/linkedin.png') }}" class="social-icon">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
