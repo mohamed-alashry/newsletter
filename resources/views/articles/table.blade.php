@@ -65,7 +65,7 @@
                 {!! Form::open(['route' => ['articles.send', $article->id], 'id' => 'email-list']) !!}
                 <div class="form-group col-sm-12">
                     {!! Form::label('email', 'Email List:') !!}
-                    {!! Form::select('email[]', $users, null, ['class' => 'form-control', 'multiple' => true]) !!}
+                    {!! Form::select('email[]', $users, null, ['class' => 'form-control', 'multiple' => true, 'required' => true]) !!}
                 </div>
                 {!! Form::close() !!}
             </div>
