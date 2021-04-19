@@ -35,7 +35,7 @@ class ArticleController extends AppBaseController
     public function index(Request $request)
     {
         $articles = Article::withCount('contents')->paginate(10);
-        $users = User::pluck('email', 'email')->toArray();
+        $users = User::pluck('name', 'email')->toArray();
 
         return view('articles.index', compact('articles', 'users'));
     }
@@ -176,9 +176,9 @@ class ArticleController extends AppBaseController
         $contentFull = $article->contents()->where('shape', 1)->orderBy('sort')->get();
         $contentHalf = $article->contents()->where('shape', 2)->orderBy('sort')->get();
 
-        // $users = User::pluck('email')->toArray();
+        $emails = request()->filled('email') ? request('email') : User::pluck('email')->toArray();
 
-        Mail::to(request('email'))
+        Mail::to($emails)
         ->send(new SendNewsletter($article, $contentFull, $contentHalf));
 
         Flash::success('Article sent successfully.');

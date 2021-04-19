@@ -44,7 +44,8 @@
 
 <script>
     function setFormAction(action) {
-        document.getElementById('email-list').action = '/articles/send/' + action
+        document.getElementById('email-list').action = '/articles/send/' + action;
+        document.getElementById('send-all').href = '/articles/send/' + action;
     }
 
 </script>
@@ -62,7 +63,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                {!! Form::open(['id' => 'email-list']) !!}
+                {!! Form::open(['id' => 'email-list', 'method' => 'get']) !!}
                 <div class="form-group col-sm-12">
                     {!! Form::label('email', 'Email List:') !!}
                     {!! Form::select('email[]', $users, null, ['class' => 'form-control', 'multiple' => true, 'required' => true]) !!}
@@ -72,6 +73,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-primary" form="email-list">Send</button>
+                <a href="/articles/send" class="btn btn-success" id="send-all">Send All</a>
             </div>
         </div>
     </div>
