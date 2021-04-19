@@ -12,15 +12,18 @@
     justify-content: center;
     background-color: #e5e5e5;
     padding: 20px;">
-        <div style="width: 40%;
+        <div style="
+        width: 680px;
+        padding: 0 60px;
         position: relative;
         border-radius: 40px;
-        padding: 15px;
         background-color: #fff;">
             <img src="{{ asset('images/top-right.png') }}" style="position: absolute;
             top: 0;
             right: 0;
             z-index: 0;
+            width: 340px;
+            height: 256px;
             border-radius: 0 40px 0 0;">
             <div style="display: flex;
             justify-content: space-between;
