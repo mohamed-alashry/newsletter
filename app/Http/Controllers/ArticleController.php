@@ -184,5 +184,6 @@ class ArticleController extends AppBaseController
         Flash::success('Article sent successfully.');
 
         return back();
+        // return view('emails.newsletter', compact('article', 'contentFull', 'contentHalf'));
     }
 }
