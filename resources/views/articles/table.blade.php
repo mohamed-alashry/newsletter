@@ -44,8 +44,8 @@
 
 <script>
     function setFormAction(action) {
-        document.getElementById('email-list').action = '/articles/send/' + action;
-        document.getElementById('send-all').href = '/articles/send/' + action;
+        document.getElementById('email-list').action = 'articles/send/' + action;
+        document.getElementById('send-all').href = 'articles/send/' + action;
     }
 
 </script>
