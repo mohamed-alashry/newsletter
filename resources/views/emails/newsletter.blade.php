@@ -371,30 +371,33 @@
                                             </table>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td align="left" style="padding:20px;Margin:0">
-                                            <table cellpadding="0" cellspacing="0" width="100%"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                <tr>
-                                                    <td align="center" valign="top"
-                                                        style="padding:0;Margin:0;width:560px">
-                                                        <table cellpadding="0" cellspacing="0" width="100%"
-                                                            role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                            <tr>
-                                                                <td align="center"
-                                                                    style="padding:0;Margin:0;position:relative;"><img
-                                                                        class="adapt-img" src="{{ $article->image }}"
-                                                                        alt title width="100%"
-                                                                        style="height:244px;object-fit: cover;display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
+                                    @if ($article->image)
+                                        <tr>
+                                            <td align="left" style="padding:20px;Margin:0">
+                                                <table cellpadding="0" cellspacing="0" width="100%"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                    <tr>
+                                                        <td align="center" valign="top"
+                                                            style="padding:0;Margin:0;width:560px">
+                                                            <table cellpadding="0" cellspacing="0" width="100%"
+                                                                role="presentation"
+                                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                                <tr>
+                                                                    <td align="center"
+                                                                        style="padding:0;Margin:0;position:relative;">
+                                                                        <img class="adapt-img"
+                                                                            src="{{ $article->image }}" alt title
+                                                                            width="100%"
+                                                                            style="height:244px;object-fit: cover;display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    @endif
                                     <tr>
                                         <td align="left" style="padding:20px;Margin:0">
                                             <table cellpadding="0" cellspacing="0" width="100%"
@@ -583,7 +586,7 @@
                                         <tr>
                                             <td align="left" style="padding:20px;Margin:0">
                                                 <table cellpadding="0" cellspacing="0" width="100%"
-                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);border-radius:8px;">
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);background-color: rgba(229,229,228,.5);border-radius:8px;">
                                                     <tr>
                                                         <td align="center" valign="top"
                                                             style="padding:0;Margin:0;width:560px">
@@ -635,7 +638,7 @@
                                                         <!--[if mso]><table style="width:560px" cellpadding="0" cellspacing="0"><tr><td style="width:270px" valign="top"><![endif]-->
                                                         <table cellpadding="0" cellspacing="0" class="es-left"
                                                             align="left"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);border-radius:8px;margin-bottom:20px;">
+                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);background-color: rgba(229,229,228,.5);border-radius:8px;margin-bottom:20px;">
                                                             <tr>
                                                                 <td class="es-m-p20b" align="left"
                                                                     style="padding:0;Margin:0;width:270px">
@@ -679,7 +682,7 @@
                                                         <!--[if mso]></td><td style="width:20px"></td><td style="width:270px" valign="top"><![endif]-->
                                                         <table cellpadding="0" cellspacing="0" class="es-right"
                                                             align="right"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);border-radius:8px;margin-bottom:20px;">
+                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);background-color: rgba(229,229,228,.5);border-radius:8px;margin-bottom:20px;">
                                                             <tr>
                                                                 <td class="es-m-p20b" align="left"
                                                                     style="padding:0;Margin:0;width:270px">
