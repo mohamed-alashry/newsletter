@@ -163,8 +163,9 @@ class ArticleController extends AppBaseController
     {
         $article = Article::find($id);
 
-        $contentFull = $article->contents()->where('shape', 1)->orderBy('sort')->first();
+        $contentFull = $article->contents()->where('shape', 1)->orderBy('sort')->get();
         $contentHalf = $article->contents()->where('shape', 2)->orderBy('sort')->get();
+        // dd($contentHalf->chunk(2));
 
         return view('articles.preview', compact('article', 'contentFull', 'contentHalf'));
     }
