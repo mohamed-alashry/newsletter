@@ -288,7 +288,7 @@
                             <td align="center" style="padding:0;Margin:0">
                                 <table class="es-content-body" cellspacing="0" cellpadding="0" bgcolor="#ffffff"
                                     align="center"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px">
+                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px;border-radius: 30px;-webkit-box-shadow: 7px 7px 9px 0px rgb(193 193 193);-moz-box-shadow: 7px 7px 9px 0px rgb(193 193 193);box-shadow: 7px 7px 9px 0px rgb(193 193 193); ">
                                     <tr>
                                         <td align="left" style="padding:0;Margin:0">
                                             <!--[if mso]><table style="width:600px" cellpadding="0" cellspacing="0"><tr><td style="width:331px" valign="top"><![endif]-->
@@ -329,7 +329,7 @@
                                                                     style="padding:0;Margin:0;font-size:0px"><img
                                                                         class="adapt-img"
                                                                         src="{{ asset('images/top-right.png') }}" alt
-                                                                        style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                                        style="border-radius: 0  30px 0 0;display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
                                                                         width="249"></td>
                                                             </tr>
                                                         </table>
@@ -348,7 +348,7 @@
                                                         style="padding:0;Margin:0;width:600px">
                                                         <table cellpadding="0" cellspacing="0" width="100%"
                                                             role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background: url(https://ad.net.sa/themes/adtheme/img/animation/Old-Logo.svg);background-size: cover;">
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0">
                                                                     <p
