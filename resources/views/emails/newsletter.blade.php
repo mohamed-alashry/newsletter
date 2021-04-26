@@ -333,11 +333,7 @@
                                                                         Visit website
                                                                     </a>
 
-                                                                    <img
-                                                                        class="adapt-img"
-                                                                        src="{{ asset('images/top-right.png') }}" alt
-                                                                        style="border-radius: 0  30px 0 0;display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
-                                                                        ></td>
+                                                                </td>
                                                             </tr>
                                                         </table>
                                                     </td>
