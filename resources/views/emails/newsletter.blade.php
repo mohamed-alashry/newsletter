@@ -326,9 +326,9 @@
                                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                             <tr class="es-mobile-hidden">
                                                                 <td align="center"
-                                                                    style="padding:0;Margin:0;font-size:0px" background="{{ asset('images/top-right.png') }}" width="249"  >
+                                                                    style="padding:0;Margin:0;font-size:0px" background="{{ asset('images/top-right.png') }}" width="350" height="150"  >
 
-                                                                    <a href="{{url('/')}}">
+                                                                    <a href="https://artpower.ad.net.sa/">
                                                                         <img src="{{ asset('images/world.png') }}">
                                                                         Visit website
                                                                     </a>
@@ -359,18 +359,26 @@
                                                             <tr background="{{ asset('images/bg-light.png') }}">
                                                                 <td colspan="2" align="center" style="padding:0;Margin:0" >
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#231F20;font-size:25px">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:45px;color:#231F20;font-size:30px;text-transform: uppercase; ">
                                                                         <strong>{{ $article->subtitle }}</strong>
                                                                     </p>
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:60px;color:#BD3D31;font-size:40px">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:85px;color:#BD3D31;font-size:70px;text-transform: uppercase;">
                                                                         <strong>{{ $article->title }}</strong>
                                                                     </p>
 
-                                                                    <p>
+                                                                    <p style="padding: 0 10%;
+                                                                        font-size: 18px;
+                                                                        text-align: justify;
+                                                                        text-align-last: left;
+                                                                        margin-top: 70px;">
                                                                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.
 
                                                                     </p>
+
+                                                                    <a style="margin-top: 40p;background-color: #BD3D31;color: #FFFFFF;padding: 12px 25px;text-align: center;" href="https://artpower.ad.net.sa/">
+                                                                        Check It Now
+                                                                    </a>
                                                                 </td>
                                                             </tr>
                                                         </table>
