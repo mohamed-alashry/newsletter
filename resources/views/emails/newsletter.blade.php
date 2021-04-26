@@ -376,7 +376,13 @@
 
                                                                     </p>
 
-                                                                    <a style="margin-top: 40p;background-color: #BD3D31;color: #FFFFFF;padding: 12px 25px;text-align: center;" href="https://artpower.ad.net.sa/">
+                                                                    <a style="    margin: 22px 10% 7px 0;
+    background-color: #bd3d31;
+    color: #ffffff;
+    padding: 12px 55px;
+    text-align: center;
+    float: right;
+    border-radius: 16px;" href="https://artpower.ad.net.sa/">
                                                                         Check It Now
                                                                     </a>
                                                                 </td>
