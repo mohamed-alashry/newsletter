@@ -353,18 +353,17 @@
                                                                 <td></td>
                                                                 <td></td>
                                                             </tr>
-                                                            <tr background="{{ asset('images/bg-light.png') }}">
+                                                            <tr background="{{ asset('images/bg-light.png') }}" style="min-height: 200px;">
                                                                 <td colspan="2" align="center" style="padding:0;Margin:0" >
                                                                     <p
                                                                         style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#231F20;font-size:25px">
                                                                         <strong>{{ $article->subtitle }}</strong>
                                                                     </p>
-                                                                </td>
-                                                                <td colspan="2"  align="center" style="padding:0;Margin:0">
                                                                     <p
                                                                         style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:60px;color:#BD3D31;font-size:40px">
-                                                                        <strong>{{ $article->title }}</strong>
                                                                     </p>
+
+
                                                                 </td>
                                                             </tr>
                                                         </table>
