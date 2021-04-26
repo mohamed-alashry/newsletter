@@ -376,13 +376,16 @@
 
                                                                     </p>
 
-                                                                    <a style="    margin: 22px 10% 7px 0;
+                                                                    <a style="margin: 22px 10% 2px 0;
     background-color: #bd3d31;
     color: #ffffff;
     padding: 12px 55px;
     text-align: center;
     float: right;
-    border-radius: 16px;text-decoration: none;text-transform: uppercase;font-size: 22px" href="https://artpower.ad.net.sa/">
+    border-radius: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;" href="https://artpower.ad.net.sa/">
                                                                         Check It Now
                                                                     </a>
                                                                 </td>
