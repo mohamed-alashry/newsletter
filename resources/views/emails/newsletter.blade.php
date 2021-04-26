@@ -382,7 +382,7 @@
     padding: 12px 55px;
     text-align: center;
     float: right;
-    border-radius: 16px;" href="https://artpower.ad.net.sa/">
+    border-radius: 16px;text-decoration: none;text-transform: uppercase;font-size: 22px" href="https://artpower.ad.net.sa/">
                                                                         Check It Now
                                                                     </a>
                                                                 </td>
