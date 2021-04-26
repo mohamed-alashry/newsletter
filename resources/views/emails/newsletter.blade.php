@@ -329,7 +329,7 @@
                                                                     style="padding:0;Margin:0;font-size:0px" background="{{ asset('images/top-right.png') }}" width="350" height="150"  >
 
                                                                     <a href="https://artpower.ad.net.sa/">
-                                                                        <img src="{{ asset('images/world.png') }}">
+                                                                        <img src="{{ asset('images/world-all.png') }}">
                                                                         Visit website
                                                                     </a>
 
