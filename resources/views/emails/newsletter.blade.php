@@ -185,7 +185,7 @@
             .es-footer,
             .es-header {
                 width: 100% !important;
-                max-width: 400px !important
+                max-width: 600px !important
             }
 
             .es-adapt-td {
@@ -288,7 +288,7 @@
                             <td align="center" style="padding:0;Margin:0">
                                 <table class="es-content-body" cellspacing="0" cellpadding="0" bgcolor="#ffffff"
                                     align="center"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:400px;border-radius: 30px;-webkit-box-shadow: 7px 7px 9px 0px rgb(193 193 193);-moz-box-shadow: 7px 7px 9px 0px rgb(193 193 193);box-shadow: 7px 7px 9px 0px rgb(193 193 193); ">
+                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px;border-radius: 30px;-webkit-box-shadow: 7px 7px 9px 0px rgb(193 193 193);-moz-box-shadow: 7px 7px 9px 0px rgb(193 193 193);box-shadow: 7px 7px 9px 0px rgb(193 193 193); ">
                                     <tr>
                                         <td align="left" style="padding:0;Margin:0">
                                             <!--[if mso]><table style="width:600px" cellpadding="0" cellspacing="0"><tr><td style="width:331px" valign="top"><![endif]-->
@@ -326,14 +326,18 @@
                                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                             <tr class="es-mobile-hidden">
                                                                 <td align="center"
-                                                                    style="padding:0;Margin:0;font-size:0px" background="{{ asset('images/top-right.png') }}" >
+                                                                    style="padding:0;Margin:0;font-size:0px" background="{{ asset('images/top-right.png') }}" width="249"  >
 
                                                                     <a href="{{url('/')}}">
                                                                         <img src="{{ asset('images/world.png') }}">
                                                                         Visit website
                                                                     </a>
 
-                                                                </td>
+                                                                    <img
+                                                                        class="adapt-img"
+                                                                        src="{{ asset('images/top-right.png') }}" alt
+                                                                        style="border-radius: 0  30px 0 0;display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                                        ></td>
                                                             </tr>
                                                         </table>
                                                     </td>
@@ -348,7 +352,7 @@
                                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
                                                     <td align="center" valign="top" 
-                                                        style="padding:0;Margin:0;width:400px">
+                                                        style="padding:0;Margin:0;width:600px">
                                                         <table cellpadding="0" cellspacing="0" width="100%"
                                                             role="presentation"
                                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;" >
@@ -514,7 +518,7 @@
                                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
                                                     <td align="center" valign="top"
-                                                        style="padding:0;Margin:0;width:400px">
+                                                        style="padding:0;Margin:0;width:600px">
                                                         <table cellpadding="0" cellspacing="0" width="100%"
                                                             role="presentation"
                                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
@@ -743,7 +747,7 @@
                                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
                                                     <td align="center" valign="top"
-                                                        style="padding:0;Margin:0;width:400px">
+                                                        style="padding:0;Margin:0;width:600px">
                                                         <table cellpadding="0" cellspacing="0" width="100%"
                                                             role="presentation"
                                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
