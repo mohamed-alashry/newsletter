@@ -288,7 +288,7 @@
                             <td align="center" style="padding:0;Margin:0">
                                 <table class="es-content-body" cellspacing="0" cellpadding="0" bgcolor="#ffffff"
                                     align="center"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px;border-radius: 30px;-webkit-box-shadow: 7px 7px 9px 0px rgb(193 193 193);-moz-box-shadow: 7px 7px 9px 0px rgb(193 193 193);box-shadow: 7px 7px 9px 0px rgb(193 193 193); ">
+                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px;border-radius: 30px;-webkit-box-shadow: 7px 7px 9px 0px rgb(193 193 193);-moz-box-shadow: 7px 7px 9px 0px rgb(193 193 193);box-shadow: 7px 7px 9px 0px rgb(193 193 193); margin: 20px 0;">
                                     <tr>
                                         <td align="left" style="padding:0;Margin:0">
                                             <!--[if mso]><table style="width:600px" cellpadding="0" cellspacing="0"><tr><td style="width:331px" valign="top"><![endif]-->
@@ -326,10 +326,14 @@
                                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                             <tr class="es-mobile-hidden">
                                                                 <td align="center"
-                                                                    style="padding:0;Margin:0;font-size:0px" background="{{ asset('images/top-right.png') }}" width="350" height="150"  >
+                                                                    style="padding:0;Margin:0;font-size:0px; border-radius: 0 30px 0 0;"
+                                                                    background="{{ asset('images/top-right.png') }}"
+                                                                    width="350" height="150">
 
-                                                                    <a href="https://artpower.ad.net.sa/"  style="margin-right: 10px;float: right;">
-                                                                        <img src="{{ asset('images/world-all.png') }}">
+                                                                    <a href="https://artpower.ad.net.sa/"
+                                                                        style="margin-right: 10px;float: right;">
+                                                                        <img
+                                                                            src="{{ asset('images/world-all.png') }}">
                                                                         Visit website
                                                                     </a>
 
@@ -347,17 +351,15 @@
                                             <table cellpadding="0" cellspacing="0" width="100%"
                                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
-                                                    <td align="center" valign="top" 
+                                                    <td align="center" valign="top"
                                                         style="padding:0;Margin:0;width:600px">
                                                         <table cellpadding="0" cellspacing="0" width="100%"
                                                             role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;" >
-                                                            <tr>
-                                                                <td></td>
-                                                                <td></td>
-                                                            </tr>
-                                                            <tr background="{{ asset('images/bg-light.png') }}">
-                                                                <td colspan="2" align="center" style="padding:0;Margin:0" >
+                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
+                                                            <tr
+                                                                style="height: 400px; background-image: url({{ asset('images/bg-light.png') }}); background-repeat: no-repeat;">
+                                                                <td colspan="2" align="center"
+                                                                    style="padding:0;Margin:0">
                                                                     <p
                                                                         style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:45px;color:#231F20;font-size:30px;text-transform: uppercase; ">
                                                                         <strong>{{ $article->subtitle }}</strong>
@@ -367,102 +369,36 @@
                                                                         <strong>{{ $article->title }}</strong>
                                                                     </p>
 
-                                                                    <p style="padding: 0 10%;
-                                                                        font-size: 18px;
-                                                                        text-align: justify;
-                                                                        text-align-last: left;
-                                                                        margin-top: 70px;">
-                                                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.
-
+                                                                    <p style="padding: 0 20px;">
+                                                                        @if ($article->image)
+                                                                            <img class="adapt-img"
+                                                                                src="{{ $article->image }}" alt title
+                                                                                width="100%"
+                                                                                style="height:244px;object-fit: cover;display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; border-radius: 20px">
+                                                                        @endif
                                                                     </p>
 
+                                                                    <div style="padding: 0 20px;
+                                                                        font-size: 18px;
+                                                                        text-align: justify;
+                                                                        text-align-last: left;">
+                                                                        {!! $article->body !!}
+
+                                                                    </div>
+
                                                                     <a style="margin: 22px 10% 2px 0;
-    background-color: #bd3d31;
-    color: #ffffff;
-    padding: 12px 55px;
-    text-align: center;
-    float: right;
-    border-radius: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;" href="https://artpower.ad.net.sa/">
-                                                                        Check It Now
+                                                                        background-color: #bd3d31;
+                                                                        color: #ffffff;
+                                                                        padding: 12px 55px;
+                                                                        text-align: center;
+                                                                        float: right;
+                                                                        border-radius: 16px;
+                                                                        text-decoration: none;
+                                                                        text-transform: uppercase;
+                                                                        font-size: 16px;"
+                                                                        href="{{ $article->link }}">
+                                                                        {{ $article->link_text }}
                                                                     </a>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    @if ($article->image)
-                                        <tr>
-                                            <td align="left" style="padding:20px;Margin:0">
-                                                <table cellpadding="0" cellspacing="0" width="100%"
-                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                    <tr>
-                                                        <td align="center" valign="top"
-                                                            style="padding:0;Margin:0;width:560px">
-                                                            <table cellpadding="0" cellspacing="0" width="100%"
-                                                                role="presentation"
-                                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                                <tr>
-                                                                    <td align="center"
-                                                                        style="padding:0;Margin:0;position:relative;">
-                                                                        <img class="adapt-img"
-                                                                            src="{{ $article->image }}" alt title
-                                                                            width="100%"
-                                                                            style="height:244px;object-fit: cover;display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    @endif
-                                    <tr>
-                                        <td align="left" style="padding:20px;Margin:0">
-                                            <table cellpadding="0" cellspacing="0" width="100%"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                <tr>
-                                                    <td align="center" valign="top"
-                                                        style="padding:0;Margin:0;width:560px">
-                                                        <table cellpadding="0" cellspacing="0" width="100%"
-                                                            role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                            <tr>
-                                                                <td align="left" style="padding:0;Margin:0">
-                                                                    <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:#231F20;font-size:18px">
-                                                                        {!! $article->body !!}</p>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left" style="padding:20px;Margin:0">
-                                            <table cellpadding="0" cellspacing="0" width="100%"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                <tr>
-                                                    <td align="center" valign="top"
-                                                        style="padding:0;Margin:0;width:560px">
-                                                        <table cellpadding="0" cellspacing="0" width="100%"
-                                                            role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                            <tr>
-                                                                <td align="right" style="padding:0;Margin:0"><span
-                                                                        class="es-button-border"
-                                                                        style="border-style:solid;border-color:#2CB543;background:#BD3D31;border-width:0px;display:inline-block;border-radius:20px;width:auto"><a
-                                                                            href="{{ $article->link }}"
-                                                                            class="es-button" target="_blank"
-                                                                            style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:18px;border-style:solid;border-color:#BD3D31;border-width:10px 20px 10px 20px;display:inline-block;background:#BD3D31;border-radius:20px;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center;border-left-width:20px;border-right-width:20px">{{ $article->link_text }}</a></span>
                                                                 </td>
                                                             </tr>
                                                         </table>
