@@ -772,27 +772,27 @@
                                                             </tr>
                                                         </table>
                                                     </td>
-                                                    <td class="esdev-mso-td" valign="top" style="padding:0;Margin:0">
+                                                    <!-- <td class="esdev-mso-td" valign="top" style="padding:0;Margin:0">
                                                         <table cellpadding="0" cellspacing="0" class="es-left"
                                                             align="left"
                                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
                                                             <tr>
                                                                 <td align="left" style="padding:0;Margin:0;width:75px">
-                                                                    <table cellpadding="0" cellspacing="0" width="100%"
-                                                                        role="presentation"
-                                                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                                        <tr>
-                                                                            <td align="center"
-                                                                                style="padding:0;Margin:0;font-size:0px">
-                                                                                <a target="_blank"
-                                                                                    href="https://www.google.com/"
-                                                                                    style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#2CB543;font-size:14px"><img
-                                                                                        src="{{ asset('images/twitter.png') }}"
-                                                                                        alt
-                                                                                        style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:25px !important"></a>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
+                                                        <table cellpadding="0" cellspacing="0" width="100%"
+                                                            role="presentation"
+                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                            <tr>
+                                                                <td align="center"
+                                                                    style="padding:0;Margin:0;font-size:0px">
+                                                                    <a target="_blank"
+                                                                        href="https://www.google.com/"
+                                                                        style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#2CB543;font-size:14px"><img
+                                                                            src="{{ asset('images/twitter.png') }}"
+                                                                            alt
+                                                                            style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:25px !important"></a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -900,7 +900,7 @@
                                                                 </td>
                                                             </tr>
                                                         </table>
-                                                    </td>
+                                                    </td> -->
                                                     <td class="esdev-mso-td" valign="top" style="padding:0;Margin:0">
                                                         <table cellpadding="0" cellspacing="0" class="es-right"
                                                             align="right"
