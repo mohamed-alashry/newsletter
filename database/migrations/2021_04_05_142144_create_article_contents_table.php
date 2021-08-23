@@ -17,8 +17,8 @@ class CreateArticleContentsTable extends Migration
         Schema::create('article_contents', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('article_id');
-            $table->string('title');
-            $table->text('body');
+            $table->string('title')->nullable();
+            $table->text('body')->nullable();
             $table->string('image')->nullable();
             $table->tinyInteger('sort')->default(1);
             $table->string('link')->nullable();

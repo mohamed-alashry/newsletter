@@ -55,8 +55,8 @@ class ArticleContent extends Model
      * @var array
      */
     public static $rules = [
-        'title' => 'required',
-        'body' => 'required',
+        // 'title' => 'required',
+        // 'body' => 'required',
         'image' => 'image'
     ];
 
@@ -65,7 +65,7 @@ class ArticleContent extends Model
         if ($file) {
             $originalName = $file->getClientOriginalName();
 
-            $fileName = time() .'_'. $originalName;
+            $fileName = time() . '_' . $originalName;
 
             $file->move('uploads/', $fileName);
 
@@ -75,7 +75,7 @@ class ArticleContent extends Model
 
     public function getImageAttribute($fileName)
     {
-        return $fileName ? asset('uploads/'.  $fileName) : null;
+        return $fileName ? asset('uploads/' .  $fileName) : null;
     }
 
     /**

@@ -37,14 +37,14 @@ class Article extends Model
      * @var array
      */
     public static $rules = [
-        'title' => 'required',
-        'subtitle' => 'required',
-        'body' => 'required',
+        // 'title' => 'required',
+        // 'subtitle' => 'required',
+        // 'body' => 'required',
         'image' => 'image',
-        'link_text' => 'required',
-        'link' => 'required',
-        'content_title' => 'required',
-        'content_subtitle' => 'required',
+        // 'link_text' => 'required',
+        // 'link' => 'required',
+        // 'content_title' => 'required',
+        // 'content_subtitle' => 'required',
     ];
 
     public function setImageAttribute($file)
@@ -52,7 +52,7 @@ class Article extends Model
         if ($file) {
             $originalName = $file->getClientOriginalName();
 
-            $fileName = time() .'_'. $originalName;
+            $fileName = time() . '_' . $originalName;
 
             $file->move('uploads/', $fileName);
 
@@ -62,7 +62,7 @@ class Article extends Model
 
     public function getImageAttribute($fileName)
     {
-        return $fileName ? asset('uploads/'.  $fileName) : null;
+        return $fileName ? asset('uploads/' .  $fileName) : null;
     }
 
     /**
