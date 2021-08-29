@@ -57,7 +57,7 @@ class ArticleContent extends Model
     public static $rules = [
         // 'title' => 'required',
         // 'body' => 'required',
-        'image' => 'image'
+        'image' => 'image|max:1000'
     ];
 
     public function setImageAttribute($file)

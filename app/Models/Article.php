@@ -40,7 +40,7 @@ class Article extends Model
         // 'title' => 'required',
         // 'subtitle' => 'required',
         // 'body' => 'required',
-        'image' => 'image',
+        'image' => 'image|max:1000',
         // 'link_text' => 'required',
         // 'link' => 'required',
         // 'content_title' => 'required',
