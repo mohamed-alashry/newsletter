@@ -35,7 +35,7 @@ class SendNewsletter extends Mailable
      */
     public function build()
     {
-        return $this->subject("Art Power Newsletter")
-        ->view('emails.newsletter');
+        return $this->subject($this->article->title ?? "Art Power Newsletter")
+            ->view('emails.newsletter');
     }
 }
