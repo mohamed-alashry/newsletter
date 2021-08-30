@@ -386,7 +386,8 @@
 
                                                                     </div>
 
-                                                                    <a style="margin: 22px 10% 2px 0;
+                                                                    @if ($article->link && $article->link_text)
+                                                                        <a style="margin: 22px 10% 2px 0;
                                                                         background-color: #bd3d31;
                                                                         color: #ffffff;
                                                                         padding: 12px 55px;
@@ -396,9 +397,10 @@
                                                                         text-decoration: none;
                                                                         text-transform: uppercase;
                                                                         font-size: 16px;"
-                                                                        href="{{ $article->link }}">
-                                                                        {{ $article->link_text }}
-                                                                    </a>
+                                                                            href="{{ $article->link }}">
+                                                                            {{ $article->link_text }}
+                                                                        </a>
+                                                                    @endif
                                                                 </td>
                                                             </tr>
                                                         </table>

@@ -63,9 +63,7 @@ class ArticleContent extends Model
     public function setImageAttribute($file)
     {
         if ($file) {
-            $originalName = $file->getClientOriginalName();
-
-            $fileName = time() . '_' . $originalName;
+            $fileName = time();
 
             $file->move('uploads/', $fileName);
 
