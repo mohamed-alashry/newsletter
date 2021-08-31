@@ -410,10 +410,10 @@
                                         </td>
                                     </tr>
                                     <tr class="es-mobile-hidden">
-                                        <td align="left" style="padding:0;Margin:0;padding-left:5px">
+                                        <td align="right" style="padding:0;Margin:0;padding-right:5px">
                                             <!--[if mso]><table style="width:595px" cellpadding="0" cellspacing="0"><tr><td style="width:204px" valign="top"><![endif]-->
-                                            <table cellpadding="0" cellspacing="0" class="es-left" align="left"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                                            <table cellpadding="0" cellspacing="0" class="es-right" align="right"
+                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
                                                 <tr>
                                                     <td class="es-m-p0r es-m-p20b" valign="top" align="center"
                                                         style="padding:0;Margin:0;width:204px">
@@ -421,10 +421,10 @@
                                                             role="presentation"
                                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                             <tr>
-                                                                <td align="left"
-                                                                    style="padding:0;Margin:0;padding-left:10px">
+                                                                <td align="right"
+                                                                    style="padding:0;Margin:0;padding-right:10px">
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#231F20;font-size:25px">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:30px;color:#BD3D31;font-size:40px">
                                                                         <strong>{{ $article->content_subtitle }}</strong>
                                                                     </p>
                                                                 </td>
@@ -434,7 +434,7 @@
                                                 </tr>
                                             </table>
                                             <!--[if mso]></td><td style="width:20px"></td><td style="width:371px" valign="top"><![endif]-->
-                                            <table cellpadding="0" cellspacing="0" align="right"
+                                            <table cellpadding="0" cellspacing="0" align="left"
                                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
                                                     <td align="left" style="padding:0;Margin:0;width:371px">
@@ -464,7 +464,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td align="left" style="padding:0;Margin:0">
+                                        <td align="right" style="padding:0;Margin:0">
                                             <table cellpadding="0" cellspacing="0" width="100%"
                                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
@@ -474,10 +474,10 @@
                                                             role="presentation"
                                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                             <tr class="es-mobile-hidden">
-                                                                <td align="left"
-                                                                    style="padding:0;Margin:0;padding-left:15px;padding-bottom:40px">
+                                                                <td align="right"
+                                                                    style="padding:0;Margin:0;padding-right:15px;padding-bottom:0px">
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:60px;color:#BD3D31;font-size:40px">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#231F20;font-size:25px">
                                                                         <strong>{{ $article->content_title }}</strong>
                                                                     </p>
                                                                 </td>
@@ -517,7 +517,8 @@
                                             </table>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="es-desk-hidden"
+                                        style="display:none;max-height:0;line-height:0;mso-hide:all">
                                         <td align="left"
                                             style="padding:0;Margin:0;padding-left:20px;padding-right:20px;padding-bottom:40px">
                                             <table cellpadding="0" cellspacing="0" width="100%"
@@ -568,17 +569,17 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td align="left"
-                                                                        style="padding:0;Margin:0;padding-left:20px">
+                                                                    <td align="right"
+                                                                        style="padding:0;Margin:0;padding-right:20px">
                                                                         <p
-                                                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:36px;color:#0C1014;font-size:24px">
+                                                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:36px;color:#0C1014;font-size:24px; text-align: right;">
                                                                             <strong>{{ $full->title }}</strong>
                                                                         </p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td align="left"
-                                                                        style="padding:0;Margin:0;padding-left:20px">
+                                                                    <td align="right"
+                                                                        style="padding:0;Margin:0;padding-right:20px">
                                                                         <p
                                                                             style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:24px;color:#A6A4A4;font-size:16px">
                                                                             {!! $full->body !!}</p>
@@ -621,8 +622,8 @@
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td align="left"
-                                                                                style="padding:0;Margin:0;padding-left:20px;">
+                                                                            <td align="right"
+                                                                                style="padding:0;Margin:0;padding-right:20px;">
                                                                                 <p
                                                                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:36px;color:#0C1014;font-size:24px">
                                                                                     <strong>{{ $half->title }}</strong>
@@ -630,7 +631,7 @@
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td align="left"
+                                                                            <td align="right"
                                                                                 style="padding:10px 20px;Margin:0;">
                                                                                 <p
                                                                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:24px;color:#A6A4A4;font-size:16px">
