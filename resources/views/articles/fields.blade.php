@@ -1,3 +1,9 @@
+<!-- Font Family Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('font_family', 'Font Family:') !!}
+    {!! Form::text('font_family', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Title Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('title', 'Title:') !!}

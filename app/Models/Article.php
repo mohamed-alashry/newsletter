@@ -20,6 +20,7 @@ class Article extends Model
 
 
     public $fillable = [
+        'font_family',
         'title',
         'subtitle',
         'body',

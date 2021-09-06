@@ -24,6 +24,10 @@
 </xml>
 <![endif]-->
     <style type="text/css">
+        * {
+            font-family: {{ $article->font_family }} !important;
+        }
+
         #outlook a {
             padding: 0;
         }
@@ -477,7 +481,7 @@
                                                                 <td align="right"
                                                                     style="padding:0;Margin:0;padding-right:15px;padding-bottom:0px">
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#231F20;font-size:25px">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#231F20;font-size:20px">
                                                                         <strong>{{ $article->content_title }}</strong>
                                                                     </p>
                                                                 </td>
