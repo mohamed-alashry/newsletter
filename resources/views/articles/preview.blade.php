@@ -365,11 +365,11 @@
                                                                 <td colspan="2" align="center"
                                                                     style="padding:0;Margin:0">
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:45px;color:#231F20;font-size:30px;text-transform: uppercase; ">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:45px;color:#231F20;font-size:25px;text-transform: uppercase; ">
                                                                         <strong>{{ $article->subtitle }}</strong>
                                                                     </p>
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:85px;color:#BD3D31;font-size:70px;text-transform: uppercase;">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:85px;color:#BD3D31;font-size:50px;text-transform: uppercase;">
                                                                         <strong>{{ $article->title }}</strong>
                                                                     </p>
 
@@ -428,7 +428,7 @@
                                                                 <td align="right"
                                                                     style="padding:0;Margin:0;padding-right:10px">
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:30px;color:#BD3D31;font-size:40px">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:30px;color:#BD3D31;font-size:30px">
                                                                         <strong>{{ $article->content_subtitle }}</strong>
                                                                     </p>
                                                                 </td>
@@ -481,7 +481,7 @@
                                                                 <td align="right"
                                                                     style="padding:0;Margin:0;padding-right:15px;padding-bottom:0px">
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#231F20;font-size:20px">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#231F20;font-size:18px">
                                                                         <strong>{{ $article->content_title }}</strong>
                                                                     </p>
                                                                 </td>
@@ -538,7 +538,7 @@
                                                                 style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all">
                                                                 <td align="left" style="padding:0;Margin:0">
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:60px;color:#BD3D31;font-size:40px">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:60px;color:#BD3D31;font-size:30px">
                                                                         <strong>{{ $article->content_title }}</strong>
                                                                     </p>
                                                                 </td>
