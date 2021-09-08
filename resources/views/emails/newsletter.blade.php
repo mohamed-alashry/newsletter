@@ -382,10 +382,7 @@
                                                                         @endif
                                                                     </p>
 
-                                                                    <div style="padding: 0 20px;
-                                                                        font-size: 18px;
-                                                                        text-align: justify;
-                                                                        text-align-last: left;">
+                                                                    <div style="padding: 0 20px;">
                                                                         {!! $article->body !!}
 
                                                                     </div>
@@ -493,8 +490,8 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td align="left"
-                                            style="padding:0;Margin:0;padding-left:20px;padding-right:20px">
+                                        <td align="right"
+                                            style="padding:0;Margin:0;padding-right:20px;padding-right:20px">
                                             <table cellpadding="0" cellspacing="0" width="100%"
                                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
@@ -505,8 +502,8 @@
                                                             role="presentation">
                                                             <!--[if !mso]><!-- -->
                                                             <tr class="es-desk-hidden"
-                                                                style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all">
-                                                                <td align="left"
+                                                                style="display:none;float:right;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all">
+                                                                <td align="right"
                                                                     style="padding:0;Margin:0;padding-top:20px">
                                                                     <p
                                                                         style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#231F20;font-size:25px">
@@ -523,8 +520,8 @@
                                     </tr>
                                     <tr class="es-desk-hidden"
                                         style="display:none;max-height:0;line-height:0;mso-hide:all">
-                                        <td align="left"
-                                            style="padding:0;Margin:0;padding-left:20px;padding-right:20px;padding-bottom:40px">
+                                        <td align="right"
+                                            style="padding:0;Margin:0;padding-right:20px;padding-right:20px;padding-bottom:40px">
                                             <table cellpadding="0" cellspacing="0" width="100%"
                                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
@@ -535,8 +532,8 @@
                                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                             <!--[if !mso]><!-- -->
                                                             <tr class="es-desk-hidden"
-                                                                style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all">
-                                                                <td align="left" style="padding:0;Margin:0">
+                                                                style="display:none;float:right;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all">
+                                                                <td align="right" style="padding:0;Margin:0">
                                                                     <p
                                                                         style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:60px;color:#BD3D31;font-size:30px">
                                                                         <strong>{{ $article->content_title }}</strong>
