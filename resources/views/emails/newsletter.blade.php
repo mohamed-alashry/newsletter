@@ -361,7 +361,7 @@
                                                             role="presentation"
                                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
                                                             <tr
-                                                                style="height: 400px; background-image: url({{ asset('images/bg-light.png') }}); background-repeat: no-repeat;">
+                                                                style="height: 400px; background-image: url({{ asset('images/bg-light.png') }}); background-repeat: no-repeat; background-position: center;">
                                                                 <td colspan="2" align="center"
                                                                     style="padding:0;Margin:0">
                                                                     <p
@@ -506,7 +506,7 @@
                                                                 <td align="right"
                                                                     style="padding:0;Margin:0;padding-top:20px">
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#231F20;font-size:25px">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#BD3D31;font-size:25px">
                                                                         <strong>{{ $article->content_subtitle }}</strong>
                                                                     </p>
                                                                 </td>
@@ -521,7 +521,7 @@
                                     <tr class="es-desk-hidden"
                                         style="display:none;max-height:0;line-height:0;mso-hide:all">
                                         <td align="right"
-                                            style="padding:0;Margin:0;padding-right:20px;padding-right:20px;padding-bottom:40px">
+                                            style="padding:0;Margin:0;padding-right:20px;padding-right:20px;padding-bottom:0px">
                                             <table cellpadding="0" cellspacing="0" width="100%"
                                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
@@ -535,7 +535,7 @@
                                                                 style="display:none;float:right;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all">
                                                                 <td align="right" style="padding:0;Margin:0">
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:60px;color:#BD3D31;font-size:30px">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:60px;color:#231F20;font-size:12px !important">
                                                                         <strong>{{ $article->content_title }}</strong>
                                                                     </p>
                                                                 </td>
