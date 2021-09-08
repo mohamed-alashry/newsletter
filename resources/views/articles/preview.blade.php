@@ -334,12 +334,12 @@
                                                                     background="{{ asset('images/top-right.png') }}"
                                                                     width="350" height="150">
 
-                                                                    <a href="https://artpower.ad.net.sa/"
+                                                                    {{-- <a href="https://artpower.ad.net.sa/"
                                                                         style="margin-right: 10px;float: right;">
                                                                         <img
                                                                             src="{{ asset('images/world-all.png') }}">
                                                                         Visit website
-                                                                    </a>
+                                                                    </a> --}}
 
                                                                 </td>
                                                             </tr>
