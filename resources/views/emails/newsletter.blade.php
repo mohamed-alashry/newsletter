@@ -483,7 +483,7 @@
                                                                 <td align="right"
                                                                     style="padding:0;Margin:0;padding-right:15px;padding-bottom:0px">
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#231F20;font-size:18px">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:38px;color:#231F20;font-size:16px">
                                                                         <strong>{{ $article->content_title }}</strong>
                                                                     </p>
                                                                 </td>
@@ -540,7 +540,7 @@
                                                                 style="display:none;float:right;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all">
                                                                 <td align="right" style="padding:0;Margin:0">
                                                                     <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:60px;color:#231F20;font-size:12px !important">
+                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:60px;color:#231F20;font-size:14px !important">
                                                                         <strong>{{ $article->content_title }}</strong>
                                                                     </p>
                                                                 </td>
