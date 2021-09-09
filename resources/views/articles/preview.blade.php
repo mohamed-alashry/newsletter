@@ -58,6 +58,10 @@
 
         @media only screen and (max-width:600px) {
 
+            .head-title {
+                font-size: 30px !important
+            }
+
             p,
             ul li,
             ol li,
@@ -370,7 +374,8 @@
                                                                     </p>
                                                                     <p
                                                                         style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:85px;color:#BD3D31;font-size:50px;text-transform: uppercase;">
-                                                                        <strong>{{ $article->title }}</strong>
+                                                                        <strong
+                                                                            class="head-title">{{ $article->title }}</strong>
                                                                     </p>
 
                                                                     <p style="padding: 0 20px;">
