@@ -311,7 +311,8 @@
                                                             <tr>
                                                                 <td align="center"
                                                                     style="padding:0;Margin:0;padding-top:40px;font-size:0px">
-                                                                    <a target="_blank" href="https://www.google.com/"
+                                                                    <a target="_blank"
+                                                                        href="https://artpower.ad.net.sa/"
                                                                         style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#2CB543;font-size:14px"><img
                                                                             class="adapt-img"
                                                                             src="{{ asset('images/artpower-logo.png') }}"
@@ -338,12 +339,12 @@
                                                                     background="{{ asset('images/top-right.png') }}"
                                                                     width="350" height="150">
 
-                                                                    {{-- <a href="https://artpower.ad.net.sa/"
+                                                                    <a href="https://artpower.ad.net.sa/"
                                                                         style="margin-right: 10px;float: right;">
                                                                         <img
                                                                             src="{{ asset('images/world-all.png') }}">
                                                                         Visit website
-                                                                    </a> --}}
+                                                                    </a>
 
                                                                 </td>
                                                             </tr>
