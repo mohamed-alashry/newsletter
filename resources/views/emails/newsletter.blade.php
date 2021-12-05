@@ -394,7 +394,7 @@
                                                                     </div>
 
                                                                     @if ($article->link && $article->link_text)
-                                                                        <a style="margin: 22px 10% 2px 0;
+                                                                        <a style="margin: 20px 20px 70px 0;
                                                                         background-color: #bd3d31;
                                                                         color: #ffffff;
                                                                         padding: 12px 55px;
