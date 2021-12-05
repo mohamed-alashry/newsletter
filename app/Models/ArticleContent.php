@@ -65,7 +65,7 @@ class ArticleContent extends Model
         if ($file) {
             $fileName = time();
 
-            $file->move('uploads/', $fileName);
+            $file->move('uploads/', $fileName) . '.' . $file->getClientOriginalExtension();
 
             $this->attributes['image'] = $fileName;
         }

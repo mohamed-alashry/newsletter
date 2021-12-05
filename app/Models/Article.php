@@ -51,7 +51,7 @@ class Article extends Model
     public function setImageAttribute($file)
     {
         if ($file) {
-            $fileName = time();
+            $fileName = time() . '.' . $file->getClientOriginalExtension();
 
             $file->move('uploads/', $fileName);
 
