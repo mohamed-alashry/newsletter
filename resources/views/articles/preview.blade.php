@@ -581,7 +581,7 @@
                                                                     <td align="right"
                                                                         style="padding:0;Margin:0;padding-right:20px">
                                                                         <p
-                                                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:36px;color:#0C1014;font-size:24px; text-align: right;">
+                                                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:36px;color:#0C1014;font-size:24px; text-align: center;">
                                                                             <strong>{{ $full->title }}</strong>
                                                                         </p>
                                                                     </td>
